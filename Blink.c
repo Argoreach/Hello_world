@@ -2,6 +2,7 @@ include <MSP430.h>
 
 int main(void)
 {
+  WDTCTL = WDTPW | WDTHOLD;
   volatile int a;
   P1DIR = 0x01;
   P1OUT = 0x00;
